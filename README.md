@@ -2,7 +2,7 @@
 simple Recursive-Descent Parser (for Univ. assignment project)
 
 # Grammar
-  <program> → <statements>
+  <program> → <statements>\n
   <statements>→ <statement> | <statement><semi_colon><statements>
   <statement> → <ident><assignment_op><expression>
   <expression> → <term><term_tail>
