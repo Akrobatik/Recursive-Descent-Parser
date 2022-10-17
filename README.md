@@ -1,8 +1,6 @@
 # Recursive-Descent-Parser
 simple Recursive-Descent Parser (for Univ. assignment project)
 
-
-
 # Grammar
   <program> → <statements>
   <statements>→ <statement> | <statement><semi_colon><statements>
