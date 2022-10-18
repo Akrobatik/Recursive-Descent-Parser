@@ -1,8 +1,6 @@
 # Recursive-Descent-Parser
 simple Recursive-Descent Parser (for Univ. assignment project)
 
-This project will be released after the submission period is over
-
 ## Grammar
 ```
 <program> → <statements>
