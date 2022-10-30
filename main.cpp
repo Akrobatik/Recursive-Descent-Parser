@@ -314,7 +314,7 @@ void lexical() {
 
       default:
         next_token = TokenType::UNDEFINED;
-        token_string.clear();
+        token_string = c;
         break;
     }
 
