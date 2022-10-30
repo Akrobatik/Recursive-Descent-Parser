@@ -12,7 +12,6 @@ enum class SyntaxError {
   OPERATOR_NOT_FOUND,
   FACTOR_NOT_FOUND,
   OPERATOR_ASSIGNMENT_NOT_FOUND,
-  UNDEFINED_OPERATOR,
   UNDEFINED_IDENTIFIER,
   UNKNOWN_TERMINAL,
   DIVIDE_BY_ZERO,
@@ -38,7 +37,6 @@ class SyntaxException : public std::exception {
       case SyntaxError::RPAREN_NOT_FOUND:
       case SyntaxError::OPERATOR_NOT_FOUND:
       case SyntaxError::FACTOR_NOT_FOUND:
-      case SyntaxError::UNDEFINED_OPERATOR:
         message_ = "invalid statement";
         break;
 
