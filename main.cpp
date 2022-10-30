@@ -84,23 +84,21 @@ void printParseSuccess(const std::vector<std::string>& insert_list, const std::v
 void printParseError(const std::string& error_message);
 
 int main(int argc, char* argv[]) {
-  // // 프로세스 실행 인수로 들어온 파일 경로가 없는 경우 오류 메시지 출력
-  // if (argc < 2) {
-  //   std::cout << "[Error] require file path as argument" << std::endl;
-  //
-  //   return 0;
-  // }
-  //
-  // // 프로세스 실행 인수로 들어온 파일 open
-  // input_file.open(argv[1]);
-  // // 입력 파일이 열렸는 지 확인 후 오류 메시지 출력
-  // if (!input_file.is_open()) {
-  //   std::cout << "[Error] file can not open" << std::endl;
-  //
-  //   return 0;
-  // }
-
-  input_file.open(R"(D:\test.txt)");
+  // 프로세스 실행 인수로 들어온 파일 경로가 없는 경우 오류 메시지 출력
+  if (argc < 2) {
+    std::cout << "[Error] require file path as argument" << std::endl;
+  
+    return 0;
+  }
+  
+  // 프로세스 실행 인수로 들어온 파일 open
+  input_file.open(argv[1]);
+  // 입력 파일이 열렸는 지 확인 후 오류 메시지 출력
+  if (!input_file.is_open()) {
+    std::cout << "[Error] file can not open" << std::endl;
+  
+    return 0;
+  }
 
   // initialize variables
   bool normal_program = true;
