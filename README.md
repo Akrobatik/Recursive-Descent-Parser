@@ -1,6 +1,10 @@
 # Recursive-Descent-Parser
 simple Recursive-Descent Parser (for Univ. assignment project)
 
+deadline : 2022-11-11
+
+public : 2022-11-14
+
 ## Grammar
 ```
 <program> → <statements>
